@@ -56,3 +56,4 @@ A ProductAPI expõe o Swagger em `/swagger` quando roda em Development.
 - [ ] Logs nas classes
 - [ ] Melhoria no Swagger
 - [ ] Mudar de id de long para GUID
+- [ ] Validar o HTTPS
