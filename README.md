@@ -59,3 +59,4 @@ A ProductAPI expõe o Swagger em `/swagger` quando roda em Development.
 - [ ] Validar o HTTPS
 - [ ] Validar parametrização dos headers nos controllers
 - [ ] Fazer containerização
+- [ ] Adicionar Testes unitários
