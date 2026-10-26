@@ -50,3 +50,4 @@ A ProductAPI expõe o Swagger em `/swagger` quando roda em Development.
 
 - [ ] Avaliar o uso de um secret manager
 - [ ] Melhorar a arquitetura das APIs
+- [ ] Organizar estrutura dos microsserviços
