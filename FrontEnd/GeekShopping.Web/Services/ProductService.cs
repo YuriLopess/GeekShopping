@@ -21,9 +21,10 @@ namespace GeekShopping.Web.Services
             return await response.ReadContentAs<List<ProductModel>>();
         }
 
-        public async Task<ProductModel> FindProductById(long id)
+        public async Task<ProductModel?> FindProductById(long id)
         {
             var response = await _httpClient.GetAsync($"{BasePath}/{id}");
+            if (response.StatusCode == HttpStatusCode.NotFound) return null;
             return await response.ReadContentAs<ProductModel>();
         }
 
