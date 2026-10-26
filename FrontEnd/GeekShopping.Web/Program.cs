@@ -20,6 +20,7 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseRequestLocalization("en-US");
 app.UseRouting();
 
 app.UseAuthorization();
