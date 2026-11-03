@@ -485,3 +485,7 @@ $RECYCLE.BIN/
 
 # Claude Code
 .claude/
+
+# Duende IdentityServer: chaves de assinatura e logs de diagnóstico gerados em tempo de execução
+/Services/GeekShopping.IdentityServer/keys/
+/Services/GeekShopping.IdentityServer/diagnostics/
