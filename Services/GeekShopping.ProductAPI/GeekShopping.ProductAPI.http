@@ -1,6 +1,0 @@
-@GeekShopping.ProductAPI_HostAddress = http://localhost:4441
-
-GET {{GeekShopping.ProductAPI_HostAddress}}/api/v1/product
-Accept: application/json
-
-###

@@ -4,17 +4,32 @@ E-commerce em arquitetura de microsserviços com ASP.NET Core.
 
 ## Estrutura
 
+Cada projeto é um repositório próprio, incluído aqui como [git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
+
 ```
 GeekShopping.sln
 ├── FrontEnd/
-│   └── GeekShopping.Web          # ASP.NET Core MVC (.NET 9)
+│   └── GeekShopping.Web               # ASP.NET Core MVC (.NET 9)          → https://localhost:4430
 └── Services/
-    └── GeekShopping.ProductAPI   # Web API de produtos (.NET 8) + PostgreSQL
+    ├── GeekShopping.IdentityServer    # Duende IdentityServer (.NET 10)   → https://localhost:4435
+    └── GeekShopping.ProductAPI        # Web API de produtos (.NET 8)      → https://localhost:4440
+```
+
+## Clonando
+
+```powershell
+git clone --recurse-submodules https://github.com/YuriLopess/GeekShopping.git
+```
+
+Se o repositório já foi clonado sem os submodules, as pastas dos projetos ficam vazias. Para baixá-las:
+
+```powershell
+git submodule update --init --recursive
 ```
 
 ## Pré-requisitos
 
-- [.NET SDK 8 e 9](https://dotnet.microsoft.com/download)
+- [.NET SDK 8, 9 e 10](https://dotnet.microsoft.com/download)
 - PostgreSQL
 - Ferramenta do Entity Framework: `dotnet tool install --global dotnet-ef`
 
