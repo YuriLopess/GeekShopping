@@ -1,0 +1,9 @@
+[submodule "FrontEnd/GeekShopping.Web"]
+	path = FrontEnd/GeekShopping.Web
+	url = https://github.com/YuriLopess/GeekShopping.Web.git
+[submodule "Services/GeekShopping.ProductAPI"]
+	path = Services/GeekShopping.ProductAPI
+	url = https://github.com/YuriLopess/GeekShopping.ProductAPI.git
+[submodule "Services/GeekShopping.IdentityServer"]
+	path = Services/GeekShopping.IdentityServer
+	url = https://github.com/YuriLopess/GeekShopping.IdentityServer.git
